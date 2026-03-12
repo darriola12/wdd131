@@ -55,17 +55,12 @@ max-width:900px;
 margin:40px auto;
 padding:20px;
 text-align:center;
+display:grid;
+gap:20px;
 }
 
 main h1{
 margin-bottom:20px;
-}
-
-/* GRID CARDS */
-
-main{
-display:grid;
-gap:20px;
 }
 
 .card{
