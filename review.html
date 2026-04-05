@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted | Diego Arriola</title>
+  <meta name="description" content="Confirmation page for the submitted product review form.">
+  <meta name="author" content="Diego Arriola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">WDD 131 Form Assignment</p>
+      <h1>Review Submitted</h1>
+      <p class="intro">Your response was sent successfully.</p>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="confirmation-card">
+      <h2>Thanks for your review.</h2>
+      <p>Your product feedback has been recorded for this assignment.</p>
+      <p class="review-count">Reviews completed: <strong id="reviewCount">0</strong></p>
+      <a class="submit-button submit-button--link" href="form.html">Submit Another Review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Diego Arriola | Costa Rica</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form | Diego Arriola</title>
+  <meta name="description" content="Submit a product review form for the WDD 131 assignment.">
+  <meta name="author" content="Diego Arriola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">WDD 131 Form Assignment</p>
+      <h1>Product Review Form</h1>
+      <p class="intro">Share your installation experience with a quick product review.</p>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <form class="review-form" method="get" action="review.html">
+      <section class="form-section">
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </section>
+
+      <fieldset class="form-section rating-group">
+        <legend>Overall Rating</legend>
+        <p class="field-note">Select one rating from 1 star to 5 stars.</p>
+        <div class="rating-options">
+          <div class="rating-option">
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1"><span class="stars">☆</span> 1</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="rating2" name="rating" value="2" required>
+            <label for="rating2"><span class="stars">☆☆</span> 2</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="rating3" name="rating" value="3" required>
+            <label for="rating3"><span class="stars">☆☆☆</span> 3</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="rating4" name="rating" value="4" required>
+            <label for="rating4"><span class="stars">☆☆☆☆</span> 4</label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" id="rating5" name="rating" value="5" required>
+            <label for="rating5"><span class="stars">☆☆☆☆☆</span> 5</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <section class="form-section">
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
+      </section>
+
+      <fieldset class="form-section">
+        <legend>Useful Features</legend>
+        <p class="field-note">Check all that apply.</p>
+        <div class="checkbox-grid">
+          <div>
+            <input type="checkbox" id="durability" name="features" value="Durability">
+            <label for="durability">Durability</label>
+          </div>
+          <div>
+            <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+            <label for="easeOfUse">Ease of Use</label>
+          </div>
+          <div>
+            <input type="checkbox" id="performance" name="features" value="Performance">
+            <label for="performance">Performance</label>
+          </div>
+          <div>
+            <input type="checkbox" id="design" name="features" value="Design">
+            <label for="design">Design</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <section class="form-section">
+        <label for="writtenReview">Written Review</label>
+        <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Tell us what stood out about the product experience."></textarea>
+      </section>
+
+      <section class="form-section">
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" name="userName" placeholder="Optional name">
+      </section>
+
+      <input class="submit-button" type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Diego Arriola | Costa Rica</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
