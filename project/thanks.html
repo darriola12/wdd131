@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Costa Rica | Inquiry Sent</title>
+  <meta name="description" content="Confirmation page for Costa Rica travel planner inquiries.">
+  <meta name="author" content="Diego Arriola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="../scripts/getdates.js" defer></script>
+  <script src="scripts/thanks.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Explore Costa Rica home">
+        <span class="brand__mark" aria-hidden="true">EC</span>
+        <span>
+          <span class="brand__name">Explore Costa Rica</span>
+          <span class="brand__tag">Adventure with confidence.</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="planner.html">Trip Planner</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <section class="confirmation-panel">
+        <p class="eyebrow">Inquiry Sent</p>
+        <h1 id="thanksHeading">Thanks for planning with us.</h1>
+        <p id="thanksMessage">Your trip inquiry has been recorded.</p>
+        <p class="favorite-readout">Trip inquiries submitted on this browser: <strong id="inquiryCount">0</strong></p>
+        <a class="button" href="planner.html">Plan Another Trip</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> Diego Arriola | Costa Rica</p>
+      <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

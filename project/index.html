@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Costa Rica | Home</title>
+  <meta name="description" content="Explore Costa Rica with destination highlights, practical travel ideas, and planning support for first-time visitors.">
+  <meta name="author" content="Diego Arriola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="../scripts/getdates.js" defer></script>
+  <script src="scripts/site-data.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Explore Costa Rica home">
+        <span class="brand__mark" aria-hidden="true">EC</span>
+        <span>
+          <span class="brand__name">Explore Costa Rica</span>
+          <span class="brand__tag">Adventure with confidence.</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="is-active" href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="planner.html">Trip Planner</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Costa Rica Travel Guide</p>
+          <h1>Plan a trip that fits your pace, budget, and sense of adventure.</h1>
+          <p>
+            Explore beaches, cloud forests, volcano views, and cultural stops through a guide designed for
+            first-time visitors and families who want clear, useful planning information.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="destinations.html">Browse Destinations</a>
+            <a class="button button--secondary" href="planner.html">Build Your Plan</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <img
+            src="images/costa-rica-hero.webp"
+            alt="Costa Rican tropical landscape with mountains and lush greenery"
+            width="600"
+            height="343"
+            loading="eager"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Destinations</p>
+          <h2>Start with places that match the experience you want.</h2>
+        </div>
+        <div id="featuredDestinations" class="card-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--accent">
+      <div class="container two-column">
+        <article class="info-panel">
+          <p class="eyebrow">Travel Snapshot</p>
+          <h2>Why travelers choose Costa Rica</h2>
+          <ul class="feature-list">
+            <li>Easy mix of beach, rainforest, wildlife, and mountain destinations.</li>
+            <li>Great choice for families, nature lovers, and first-time international travelers.</li>
+            <li>Compact geography makes it possible to enjoy multiple regions in one trip.</li>
+          </ul>
+        </article>
+
+        <aside class="tip-panel">
+          <p class="eyebrow">Local Tip</p>
+          <h2 id="tipHeading">Today’s planning idea</h2>
+          <p id="travelTip">
+            Pack light layers so you can move easily between warm coastlines and cooler mountain areas.
+          </p>
+          <button id="newTipButton" class="button button--secondary" type="button">Show Another Tip</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container story-grid">
+        <article class="story-card story-card--wide">
+          <img
+            src="images/costa-rica-coast.webp"
+            alt="Costa Rica coastal view with tropical greenery"
+            width="600"
+            height="343"
+            loading="lazy"
+          >
+          <div class="story-card__content">
+            <h2>Beach mornings, rainforest afternoons</h2>
+            <p>
+              Many itineraries combine relaxed coastal time with inland activities such as hanging bridges,
+              hot springs, and wildlife watching.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <img
+            src="images/costa-rica-culture.jpg"
+            alt="Temple building in Costa Rica with palm trees nearby"
+            width="500"
+            height="375"
+            loading="lazy"
+          >
+          <div class="story-card__content">
+            <h2>Cultural stops add balance</h2>
+            <p>
+              A stronger trip plan includes food, local towns, and meaningful landmarks in addition to outdoor activities.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> Diego Arriola | Costa Rica</p>
+      <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
