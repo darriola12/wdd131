@@ -304,6 +304,31 @@ label,
   width: 100%;
 }
 
+.photo-strip {
+  display: grid;
+  gap: 1rem;
+}
+
+.photo-card {
+  margin: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.photo-card figcaption {
+  padding: 0.95rem 1rem 1.1rem;
+  color: var(--teal-deep);
+  font-weight: 600;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -439,6 +464,10 @@ label,
 
   .story-grid {
     grid-template-columns: 1.35fr 1fr;
+  }
+
+  .photo-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .story-card--wide {
